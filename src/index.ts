@@ -50,6 +50,7 @@ export function DrawMap(colors?: Colors) {
 
   SvgWrapper.appendChild(SvgElement);
 
+  console.log(SvgWrapper);
   return SvgWrapper;
 }
 
