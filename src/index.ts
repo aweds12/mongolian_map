@@ -45,12 +45,15 @@ export function DrawMap(colors?: Colors) {
 
   for (let i in MapData) {
     const SvgGroupElement = createSvgGroup(MapData[i]);
+    console.log("g element created");
+
     SvgElement.appendChild(SvgGroupElement);
+    console.log("g appended to svg");
   }
 
   SvgWrapper.appendChild(SvgElement);
 
-  console.log(SvgWrapper);
+  console.log("svg wrapped", SvgWrapper);
   return SvgWrapper;
 }
 

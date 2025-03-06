@@ -1,6 +1,6 @@
 {
   "name": "@aweds12/svg_map_mn",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Mongolian interactive vector map",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

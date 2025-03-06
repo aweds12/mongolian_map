@@ -9,9 +9,13 @@ export const createSvgGroup = (reg: Region) => {
 
   for (let i in reg.aimag) {
     const SvgPathElement = createSvgPath(reg, reg.aimag[i]);
+    console.log('path created');
+
     SvgGroupElement.appendChild(SvgPathElement);
+    console.log('path appended to g');
   }
 
+  console.log('svg group', SvgGroupElement);
   return SvgGroupElement;
 };
 
@@ -38,5 +42,6 @@ export const createSvgPath = (reg: Region, aimag: Province) => {
     "color, background-color, border-color, text-decoration-color, fill, stroke";
   SvgPathElement.addEventListener("click", () => SelectedThisPlace(reg, aimag));
 
+  console.log('svg path', SvgPathElement);
   return SvgPathElement;
 };
