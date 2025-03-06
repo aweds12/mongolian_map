@@ -13,7 +13,7 @@ export type Colors = {
 
 export let customColors: string[] = [];
 
-export function DrawMap(name: string, colors?: Colors) {
+export function DrawMap(colors?: Colors) {
   customColors = colors ? Object.values(colors) : [];
   const SvgWrapper = document.createElement("div");
 
