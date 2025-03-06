@@ -58,8 +58,8 @@ export const createSvgGroup = (reg: Region) => {
   SvgGroupElement.setAttribute("id", `region_${reg.name}`);
 
   for (let i in reg.aimag) {
-    const SvgGroupElement = createSvgPath(reg, reg.aimag[i]);
-    SvgGroupElement.appendChild(SvgGroupElement);
+    const SvgPathElement = createSvgPath(reg, reg.aimag[i]);
+    SvgGroupElement.appendChild(SvgPathElement);
   }
 
   return SvgGroupElement;
